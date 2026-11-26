@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><style data-dc-design-system-vars>@layer{:root{--surface:#ffffff;--surface-alt:#f3f6f8;--surface-raised:#ffffff;--ink:#1a1f24;--slate:#485664;--slate-dark:#3a4753;--slate-light:#8f9fae;--line:#d9e1e7;--field-border:#6b7a88;--teal:#0ea2bd;--teal-light:#1ec3e0;--teal-dark:#0189a1;--on-teal:#1a1f24;--error:#b42318;--heading-gradient-start:#000000;--heading-gradient-end:#666666;--nav-glass:#ffffffb8;--menu-glass:#ffffffeb;--spacing-0:0;--spacing-25:2px;--spacing-50:4px;--spacing-75:8px;--spacing-100:12px;--spacing-200:16px;--spacing-300:24px;--spacing-400:32px;--spacing-500:40px;--spacing-600:48px;--spacing-700:64px;--spacing-800:80px;--spacing-900:96px;--radius-none:0;--radius-sm:2px;--radius-default:4px;--radius-md:6px;--radius-lg:8px;--radius-xl:12px;--radius-2xl:16px;--radius-3xl:24px;--radius-full:9999px;--container-max:1200px;--text-max:680px;--touch-target:44px;--blur-nav:16px;--blur-menu:24px;--opacity-muted-word:0.3;--opacity-disabled:0.6;--font-sans:Poppins, system-ui, sans-serif;--text-display-xl:600 60px/1 var(--font-sans);--text-display-lg:600 48px/1 var(--font-sans);--text-heading-1:600 36px/40px var(--font-sans);--text-heading-2:600 30px/36px var(--font-sans);--text-heading-3:600 24px/32px var(--font-sans);--text-title:600 20px/28px var(--font-sans);--text-subtitle:600 18px/28px var(--font-sans);--text-lead:400 18px/28px var(--font-sans);--text-body:400 16px/24px var(--font-sans);--text-small:400 14px/20px var(--font-sans);--text-label:600 14px/20px var(--font-sans);--text-nav:500 14px/20px var(--font-sans);--text-button:600 16px/24px var(--font-sans);--text-button-sm:600 14px/20px var(--font-sans);--text-wordmark:300 24px/32px var(--font-sans);}}</style>
+<meta charset="utf-8"><style data-dc-design-system-vars>@layer{:root{--surface:#ffffff;--surface-alt:#f3f6f8;--surface-raised:#ffffff;--ink:#1a1f24;--slate:#485664;--slate-dark:#3a4753;--slate-light:#8f9fae;--line:#d9e1e7;--field-border:#6b7a88;--teal:#0ea2bd;--teal-light:#1ec3e0;--teal-dark:#0189a1;--on-teal:#ffffff;--error:#b42318;--heading-gradient-start:#000000;--heading-gradient-end:#666666;--nav-glass:#ffffffb8;--menu-glass:#ffffffeb;--spacing-0:0;--spacing-25:2px;--spacing-50:4px;--spacing-75:8px;--spacing-100:12px;--spacing-200:16px;--spacing-300:24px;--spacing-400:32px;--spacing-500:40px;--spacing-600:48px;--spacing-700:64px;--spacing-800:80px;--spacing-900:96px;--radius-none:0;--radius-sm:2px;--radius-default:4px;--radius-md:6px;--radius-lg:8px;--radius-xl:12px;--radius-2xl:16px;--radius-3xl:24px;--radius-full:9999px;--container-max:1200px;--text-max:680px;--touch-target:44px;--blur-nav:16px;--blur-menu:24px;--opacity-muted-word:0.3;--opacity-disabled:0.6;--font-sans:Poppins, system-ui, sans-serif;--text-display-xl:600 60px/1 var(--font-sans);--text-display-lg:600 48px/1 var(--font-sans);--text-heading-1:600 36px/40px var(--font-sans);--text-heading-2:600 30px/36px var(--font-sans);--text-heading-3:600 24px/32px var(--font-sans);--text-title:600 20px/28px var(--font-sans);--text-subtitle:600 18px/28px var(--font-sans);--text-lead:400 18px/28px var(--font-sans);--text-body:400 16px/24px var(--font-sans);--text-small:400 14px/20px var(--font-sans);--text-label:600 14px/20px var(--font-sans);--text-nav:500 14px/20px var(--font-sans);--text-button:600 16px/24px var(--font-sans);--text-button-sm:600 14px/20px var(--font-sans);--text-wordmark:300 24px/32px var(--font-sans);}}</style>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -17,9 +17,11 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <style>
+/* Poppins (SIL Open Font License), Latin subset, hosted with the site: no request to Google */
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url(./assets/04500bea273e787429122ce6e2d9ce7f.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url(./assets/fa4143fae1f96894f4de855f32380afc.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url(./assets/3a054217bb3b24c0191dd32841604d21.woff2) format("woff2")}
 body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
 a{color:var(--ink)}a:hover{color:var(--slate-dark)}
 *,*::before,*::after{box-sizing:border-box}
@@ -34,7 +36,7 @@ p,li,dd,dt,summary,label{text-wrap:pretty}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--touch-target);padding:var(--spacing-75) var(--spacing-100);border-radius:var(--radius-full);font-family:inherit;font-size:16px;line-height:24px;font-weight:600;text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:background-color 300ms cubic-bezier(0.22,1,0.36,1),transform 300ms cubic-bezier(0.22,1,0.36,1)}
 .btn-sm{font-size:14px;line-height:20px}
 .btn-primary{background:var(--teal);color:var(--on-teal)}
-.btn-primary:hover{background:var(--teal-light);color:var(--on-teal)}
+.btn-primary:hover{background:var(--teal-dark);color:var(--on-teal)}
 .btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
 .btn-ghost:hover{background:var(--surface-alt);color:var(--ink)}
 .btn:active{transform:scale(0.98)}
@@ -62,6 +64,22 @@ header{position:sticky;top:0;z-index:50}
 .mlink:hover{color:var(--slate-dark)}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes riseIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.pn{position:fixed;left:var(--spacing-200);bottom:var(--spacing-200);z-index:35;width:min(400px,calc(100% - 32px));padding:var(--spacing-300);border:1px solid var(--line);border-radius:var(--radius-2xl);background:var(--surface-raised);color:var(--ink);animation:riseIn 500ms cubic-bezier(0.22,1,0.36,1) both}
+.pn:focus{outline:none}
+.pn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.pn-title{margin:0;font-size:16px;line-height:24px;font-weight:600;color:var(--ink)}
+.pn-text{margin:var(--spacing-75) 0 0;font-size:14px;line-height:20px;color:var(--slate)}
+.pn-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-75);margin-top:var(--spacing-200)}
+.pn-link{display:inline-flex;align-items:center;min-height:var(--touch-target);padding:0 var(--spacing-75);font-size:14px;line-height:20px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:4px;border-radius:var(--radius-default)}
+.pn-link:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.pn-cats{list-style:none;margin:var(--spacing-200) 0 0;padding:0;display:flex;flex-direction:column;gap:var(--spacing-75)}
+.pn-check{display:flex;align-items:flex-start;gap:var(--spacing-100);min-height:var(--touch-target);font-size:14px;line-height:20px;color:var(--ink);cursor:pointer}
+.pn-check input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--teal)}
+.pn-check input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.pn-cat-text{display:block;margin-top:var(--spacing-25);color:var(--slate)}
+.flink-btn{background:none;border:0;padding:0;margin:0;font-family:inherit;cursor:pointer}
+.flink-btn:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-underline-offset:4px}
+.flink-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .hero{padding-top:var(--spacing-900);padding-bottom:var(--spacing-900)}
 .hero-grid{margin-top:var(--spacing-700);display:grid;grid-template-columns:minmax(0,640px) minmax(0,1fr);gap:var(--spacing-700);align-items:center}
 .hero-title{margin:0;max-width:var(--text-max);padding-bottom:var(--spacing-75);font-size:60px;line-height:1;font-weight:600;background:linear-gradient(90deg,var(--heading-gradient-start),var(--heading-gradient-end));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -146,14 +164,11 @@ header{position:sticky;top:0;z-index:50}
 <path style="stroke-linejoin: round" d="M280 240 L187.4 186.5 M280 240 L372.6 186.5 M280 240 L280.0 346.9"></path>
 </g>
 <g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="0.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="-1.11s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="-2.22s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
+<g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="-1.67s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
 <g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="0.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="-1.33s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="-2.67s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
+<g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="-2.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
 <g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="0.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="-1.56s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="-3.11s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
+<g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="-2.33s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
 </svg></div></sc-if>
 <a class="skip" href="#main">Skip to content</a>
 
@@ -190,7 +205,7 @@ header{position:sticky;top:0;z-index:50}
 <h1 class="hero-title" id="hero-title"><span>Trusted identity</span><span>and accountable AI,</span><span>from sandbox</span><span>to production</span></h1>
 <p class="lead" style="margin-top: var(--spacing-300)">We research, design and build identity infrastructure and AI agent teams for central banks, payment firms, public agencies and other regulated operators.</p>
 <div style="margin-top: var(--spacing-400); display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-200)">
-<a class="btn btn-primary" href="#contact" style="color: var(--surface)">Talk to our team</a>
+<a class="btn btn-primary" href="#contact">Talk to our team</a>
 </div>
 
 </div>
@@ -206,14 +221,11 @@ header{position:sticky;top:0;z-index:50}
 <path style="stroke-linejoin: round" d="M280 240 L187.4 186.5 M280 240 L372.6 186.5 M280 240 L280.0 346.9"></path>
 </g>
 <g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="0.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="-1.11s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="-2.22s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
+<g class="electron" transform="translate(280 240) rotate(90)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="3.33s" begin="-1.67s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
 <g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="0.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="-1.33s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="-2.67s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
+<g class="electron" transform="translate(280 240) rotate(30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.00s" begin="-2.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
 <g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="0.00s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="-1.56s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
-<g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="-3.11s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
+<g class="electron" transform="translate(280 240) rotate(-30)"><circle r="10" style="fill: var(--teal); stroke: var(--surface); stroke-width: 4"><animateMotion dur="4.67s" begin="-2.33s" repeatCount="indefinite" path="M -206 0 A 206 96 0 1 0 206 0 A 206 96 0 1 0 -206 0"></animateMotion></circle></g>
 </svg>
 <span class="atom-label" style="left: 53.6%; top: 7.1%; transform: translateY(-50%)">Applied AI</span>
 <span class="atom-label" style="left: 81.9%; top: 76%; transform: translateX(-50%)">Blockchain</span>
@@ -253,19 +265,19 @@ header{position:sticky;top:0;z-index:50}
 <p class="intro">Three fields of research and engineering, applied to regulated work.</p>
 <div class="grid3" style="margin-top: var(--spacing-600)">
 <article class="card-pad" style="padding: var(--spacing-400); border: 1px solid var(--line); border-radius: var(--radius-2xl); background: var(--surface-raised); display: flex; flex-direction: column; gap: var(--spacing-200)">
-<svg width="72" height="56" viewBox="-4 -4 72 56" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="12" transform="rotate(90 32 24)" style="fill: none; stroke: var(--slate); stroke-width: 1.5"></ellipse><circle cx="32" cy="24" r="3" style="fill: var(--ink)"></circle><g class="electron" transform="translate(32 24) rotate(90)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="3.33s" begin="0.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(90)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="3.33s" begin="-1.11s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(90)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="3.33s" begin="-2.22s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g></svg>
+<svg width="72" height="56" viewBox="-4 -4 72 56" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="12" transform="rotate(90 32 24)" style="fill: none; stroke: var(--slate); stroke-width: 1.5"></ellipse><circle cx="32" cy="24" r="3" style="fill: var(--ink)"></circle><g class="electron" transform="translate(32 24) rotate(90)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="3.33s" begin="0.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(90)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="3.33s" begin="-1.67s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g></svg>
 <h3 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; color: var(--ink)">Applied AI</h3>
 <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--slate); flex-grow: 1">Assistants and automation for regulated workflows, built with audit trails and human review.</p>
 <a class="tlink" href="solutions.html" aria-label="Explore applied AI solutions">Explore solutions</a>
 </article>
 <article class="card-pad" style="padding: var(--spacing-400); border: 1px solid var(--line); border-radius: var(--radius-2xl); background: var(--surface-raised); display: flex; flex-direction: column; gap: var(--spacing-200)">
-<svg width="72" height="56" viewBox="-4 -4 72 56" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="12" transform="rotate(30 32 24)" style="fill: none; stroke: var(--slate); stroke-width: 1.5"></ellipse><circle cx="32" cy="24" r="3" style="fill: var(--ink)"></circle><g class="electron" transform="translate(32 24) rotate(30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.00s" begin="0.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.00s" begin="-1.33s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.00s" begin="-2.67s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g></svg>
+<svg width="72" height="56" viewBox="-4 -4 72 56" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="12" transform="rotate(30 32 24)" style="fill: none; stroke: var(--slate); stroke-width: 1.5"></ellipse><circle cx="32" cy="24" r="3" style="fill: var(--ink)"></circle><g class="electron" transform="translate(32 24) rotate(30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.00s" begin="0.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.00s" begin="-2.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g></svg>
 <h3 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; color: var(--ink)">Blockchain</h3>
 <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--slate); flex-grow: 1">Shared ledgers, smart contracts and tokenisation for settlement, records and assets.</p>
 <a class="tlink" href="solutions.html" aria-label="Explore blockchain solutions">Explore solutions</a>
 </article>
 <article class="card-pad" style="padding: var(--spacing-400); border: 1px solid var(--line); border-radius: var(--radius-2xl); background: var(--surface-raised); display: flex; flex-direction: column; gap: var(--spacing-200)">
-<svg width="72" height="56" viewBox="-4 -4 72 56" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="12" transform="rotate(-30 32 24)" style="fill: none; stroke: var(--slate); stroke-width: 1.5"></ellipse><circle cx="32" cy="24" r="3" style="fill: var(--ink)"></circle><g class="electron" transform="translate(32 24) rotate(-30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.67s" begin="0.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(-30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.67s" begin="-1.56s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(-30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.67s" begin="-3.11s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g></svg>
+<svg width="72" height="56" viewBox="-4 -4 72 56" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="12" transform="rotate(-30 32 24)" style="fill: none; stroke: var(--slate); stroke-width: 1.5"></ellipse><circle cx="32" cy="24" r="3" style="fill: var(--ink)"></circle><g class="electron" transform="translate(32 24) rotate(-30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.67s" begin="0.00s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g><g class="electron" transform="translate(32 24) rotate(-30)"><circle r="4" style="fill: var(--teal); stroke: var(--surface); stroke-width: 2"><animateMotion dur="4.67s" begin="-2.33s" repeatCount="indefinite" path="M -26 0 A 26 12 0 1 0 26 0 A 26 12 0 1 0 -26 0"></animateMotion></circle></g></svg>
 <h3 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; color: var(--ink)">Cryptography</h3>
 <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--slate); flex-grow: 1">Digital identity, verifiable credentials, consent and proofs that keep data private.</p>
 <a class="tlink" href="solutions.html" aria-label="Explore cryptography solutions">Explore solutions</a>
@@ -465,8 +477,9 @@ header{position:sticky;top:0;z-index:50}
 <textarea class="field" id="f-msg" name="message" rows="4" aria-invalid="{{ inv.message }}" aria-describedby="err-msg" style="resize: vertical"></textarea>
 <sc-if value="{{ inv.message }}" hint-placeholder-val="{{ false }}"><p class="ferr" id="err-msg">{{ err.message }}</p></sc-if>
 </div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: var(--slate)">We’ll use these details to reply to you. Our <a href="privacy.html" style="color: var(--ink); text-decoration-color: var(--teal); text-decoration-thickness: 2px; text-underline-offset: 4px">privacy policy</a> explains how we handle them.</p>
 <div>
-<button class="btn btn-primary" type="submit" disabled="{{ sending }}" style="color: var(--surface)">{{ btnLabel }}</button>
+<button class="btn btn-primary" type="submit" disabled="{{ sending }}">{{ btnLabel }}</button>
 </div>
 </form>
 </sc-if>
@@ -525,10 +538,38 @@ header{position:sticky;top:0;z-index:50}
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: var(--spacing-300)">
 <li><a class="flink" href="privacy.html">Privacy policy</a></li>
 <li><a class="flink" href="terms.html">Terms of use</a></li>
+<li><button class="flink flink-btn" type="button" onClick="{{ openPrivacy }}">Privacy choices</button></li>
 </ul>
 </div>
 </div>
 </footer>
+
+<sc-if value="{{ privacyOpen }}" hint-placeholder-val="{{ true }}">
+<section class="pn" role="region" aria-labelledby="pn-title" tabIndex="-1" ref="{{ setPn }}">
+<h2 class="pn-title" id="pn-title">Your privacy</h2>
+<sc-if value="{{ noticeMode }}" hint-placeholder-val="{{ true }}">
+<p class="pn-text">This site sets no tracking cookies. We count visits with Cloudflare Web Analytics, which works without cookies and doesn’t follow you across sites.</p>
+<div class="pn-actions"><button class="btn btn-primary btn-sm" type="button" onClick="{{ acknowledge }}">Got it</button><a class="pn-link" href="privacy.html">Privacy policy</a></div>
+</sc-if>
+<sc-if value="{{ consentMode }}" hint-placeholder-val="{{ false }}">
+<p class="pn-text">We’d like your permission for the optional uses below. You can change your mind any time under Privacy choices at the bottom of the page.</p>
+<sc-if value="{{ privacySettings }}" hint-placeholder-val="{{ false }}">
+<ul class="pn-cats">
+<sc-for list="{{ privacyCats }}" as="c" hint-placeholder-count="2">
+<li><label class="pn-check"><input type="checkbox" checked="{{ c.checked }}" disabled="{{ c.required }}" onChange="{{ c.toggle }}"><span><strong>{{ c.label }}</strong><span class="pn-cat-text">{{ c.text }}</span></span></label></li>
+</sc-for>
+</ul>
+</sc-if>
+<div class="pn-actions">
+<button class="btn btn-ghost btn-sm" type="button" onClick="{{ rejectAll }}">Reject all</button>
+<button class="btn btn-ghost btn-sm" type="button" onClick="{{ acceptAll }}">Accept all</button>
+<sc-if value="{{ privacyPicking }}" hint-placeholder-val="{{ false }}"><button class="btn btn-ghost btn-sm" type="button" onClick="{{ saveChoices }}">Save my choices</button></sc-if>
+<sc-if value="{{ privacyNotPicking }}" hint-placeholder-val="{{ true }}"><button class="btn btn-ghost btn-sm" type="button" onClick="{{ openSettings }}">Choose</button></sc-if>
+<a class="pn-link" href="privacy.html">Privacy policy</a>
+</div>
+</sc-if>
+</section>
+</sc-if>
 
 </div>
 </x-dc>
@@ -536,7 +577,7 @@ header{position:sticky;top:0;z-index:50}
 class Component extends DCLogic {
   constructor(...args) {
     super(...args);
-    this.state = { menuOpen: false, hidden: {}, shown: {}, words: 0, status: 'idle', errors: {}, sentTo: '', loading: true, fading: false };
+    this.state = { menuOpen: false, hidden: {}, shown: {}, words: 0, status: 'idle', errors: {}, sentTo: '', loading: true, fading: false, privacyOpen: false, privacySettings: false, privacyDraft: {} };
     this.ease = 'cubic-bezier(0.22, 1, 0.36, 1)';
     this.endpoint = 'https://script.google.com/macros/s/AKfycbxez23Yd37vmPNn0Vcm3HVaDhTolJE95Hdh6JwMSyCV1D4Kv8MdWGomPeWJL2johPJPsA/exec';
     this.sections = ['principles', 'pillars', 'benefits', 'products', 'work', 'process', 'services', 'faq', 'contact'];
@@ -548,6 +589,64 @@ class Component extends DCLogic {
       { label: 'Education', children: [{ label: 'All programmes', href: 'education.html' }, { label: 'Enrichment', href: 'akp-edu-1.html' }, { label: 'Advanced Learning', href: 'akp-edu-2.html' }, { label: 'Specialisation', href: 'akp-edu-3.html' }] },
       { label: 'Contact', href: '#contact' }
     ];
+    // Privacy notice. Today it only informs: the site sets no tracking cookies.
+    // To ask for consent later, add an optional category below (required: false, e.g. analytics or marketing).
+    // The notice then becomes a consent prompt: Reject all and Accept all side by side, Choose for each
+    // category (every optional box unticked), and the choice is stored for maxAgeDays.
+    // Other scripts check window.akpConsent.allowed('marketing') before loading and listen for the
+    // 'akp:consent' event on window. Raise version whenever categories or the privacy policy change.
+    this.privacy = {
+      version: 1,
+      storageKey: 'akp-privacy',
+      maxAgeDays: 180,
+      categories: [
+        { id: 'necessary', label: 'Strictly necessary', required: true, text: 'Keeps the site working and remembers your choice in this notice.' }
+      ]
+    };
+    this.consent = null;
+    this.setPn = (el) => { this.pnEl = el; };
+    this.optional = () => this.privacy.categories.filter((c) => !c.required);
+    this.readPrivacy = () => {
+      try {
+        const raw = window.localStorage.getItem(this.privacy.storageKey);
+        if (!raw) return null;
+        const v = JSON.parse(raw);
+        const age = (Date.now() - Date.parse(v.at)) / 86400000;
+        if (v.v !== this.privacy.version || !(age >= 0 && age < this.privacy.maxAgeDays)) return null;
+        return v;
+      } catch (e) { return null; }
+    };
+    this.applyPrivacy = (choices) => {
+      this.consent = { v: this.privacy.version, at: new Date().toISOString(), choices: choices };
+      try { window.localStorage.setItem(this.privacy.storageKey, JSON.stringify(this.consent)); } catch (e) {}
+      try { window.dispatchEvent(new CustomEvent('akp:consent', { detail: choices })); } catch (e) {}
+    };
+    this.choicesWith = (pick) => {
+      const out = {};
+      this.privacy.categories.forEach((c) => { out[c.id] = c.required ? true : !!pick(c); });
+      return out;
+    };
+    this.closePrivacy = () => this.setState({ privacyOpen: false, privacySettings: false });
+    this.acknowledge = () => { this.applyPrivacy(this.choicesWith(() => false)); this.closePrivacy(); };
+    this.acceptAll = () => { this.applyPrivacy(this.choicesWith(() => true)); this.closePrivacy(); };
+    this.rejectAll = () => { this.applyPrivacy(this.choicesWith(() => false)); this.closePrivacy(); };
+    this.openSettings = () => {
+      const cur = (this.consent && this.consent.choices) || {};
+      const draft = {};
+      this.optional().forEach((c) => { draft[c.id] = !!cur[c.id]; });
+      this.setState({ privacySettings: true, privacyDraft: draft });
+    };
+    this.saveChoices = () => { const d = this.state.privacyDraft || {}; this.applyPrivacy(this.choicesWith((c) => d[c.id])); this.closePrivacy(); };
+    this.openPrivacy = () => {
+      this.setState({ privacyOpen: true }, () => {
+        if (this.optional().length) this.openSettings();
+        if (this.pnEl && this.pnEl.focus) this.pnEl.focus();
+      });
+    };
+    this.toggles = {};
+    this.privacy.categories.forEach((c) => {
+      this.toggles[c.id] = () => this.setState((s) => ({ privacyDraft: Object.assign({}, s.privacyDraft, { [c.id]: !(s.privacyDraft || {})[c.id] }) }));
+    });
     this.els = {};
     this.sectionRefs = {};
     this.sections.forEach((k) => { this.sectionRefs[k] = (el) => { this.els[k] = el; }; });
@@ -591,6 +690,16 @@ class Component extends DCLogic {
   }
 
   componentDidMount() {
+    const saved = this.readPrivacy();
+    this.consent = saved;
+    const self = this;
+    window.akpConsent = {
+      version: this.privacy.version,
+      allowed: (id) => { const c = self.consent && self.consent.choices; return !!(c && c[id]); },
+      open: () => self.openPrivacy()
+    };
+    if (saved) { try { window.dispatchEvent(new CustomEvent('akp:consent', { detail: saved.choices })); } catch (e) {} }
+    else this.privacyTimer = setTimeout(() => this.setState({ privacyOpen: true }), 1600);
     this.loaderTimer = setTimeout(() => {
       this.setState({ fading: true });
       this.loaderTimer2 = setTimeout(() => this.setState({ loading: false }), 600);
@@ -633,6 +742,7 @@ class Component extends DCLogic {
     clearTimeout(this.sendTimer);
     clearTimeout(this.loaderTimer);
     clearTimeout(this.loaderTimer2);
+    clearTimeout(this.privacyTimer);
   }
 
   renderVals() {
@@ -664,7 +774,24 @@ class Component extends DCLogic {
     const stepMs = Math.min(60, Math.floor(400 / Math.max(1, flat.length - 1)));
     const navItems = flat.map((it, idx) => Object.assign({}, it, { delay: (idx * stepMs) + 'ms' }));
     const errors = s.errors || {};
+    const optional = this.optional();
+    const draft = s.privacyDraft || {};
+    const privacyCats = this.privacy.categories.map((c) => ({ label: c.label, text: c.text, required: !!c.required, checked: c.required ? true : !!draft[c.id], toggle: this.toggles[c.id] }));
     return {
+      privacyOpen: s.privacyOpen,
+      noticeMode: optional.length === 0,
+      consentMode: optional.length > 0,
+      privacySettings: s.privacySettings,
+      privacyPicking: s.privacySettings,
+      privacyNotPicking: !s.privacySettings,
+      privacyCats: privacyCats,
+      acknowledge: this.acknowledge,
+      acceptAll: this.acceptAll,
+      rejectAll: this.rejectAll,
+      openSettings: this.openSettings,
+      saveChoices: this.saveChoices,
+      openPrivacy: this.openPrivacy,
+      setPn: this.setPn,
       refs: this.sectionRefs,
       setTagline: this.setTagline,
       rv: rv,
