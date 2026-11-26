@@ -1,0 +1,68 @@
+/* AKP Brand Kit tokens for this canvas, compiled from the kit's tokens.json (https://claude.ai/artifact/NDJN9nMN7LiRQ8XXQTCx6V). Change values in the kit, then resync. */
+:root, [data-theme="light"] {
+  --surface: #ffffff;
+  --surface-alt: #f3f6f8;
+  --surface-raised: #ffffff;
+  --ink: #1a1f24;
+  --slate: #485664;
+  --slate-dark: #3a4753;
+  --slate-light: #8f9fae;
+  --line: #d9e1e7;
+  --field-border: #6b7a88;
+  --teal: #0ea2bd;
+  --teal-light: #1ec3e0;
+  --teal-dark: #0189a1;
+  --on-teal: #1a1f24;
+  --error: #b42318;
+  --heading-gradient-start: #000000;
+  --heading-gradient-end: #666666;
+  --nav-glass: rgba(255,255,255,0.72);
+  --menu-glass: rgba(255,255,255,0.92);
+}
+[data-theme="dark"] {
+  --surface: #181818;
+  --surface-alt: #1f1f1f;
+  --surface-raised: #272727;
+  --ink: #f3f6f8;
+  --slate: #aab6c1;
+  --slate-dark: #c9d1d8;
+  --line: #313131;
+  --field-border: #7c8894;
+  --error: #f97066;
+  --heading-gradient-start: #ffffff;
+  --heading-gradient-end: #9b9b9b;
+  --nav-glass: rgba(24,24,24,0.72);
+  --menu-glass: rgba(24,24,24,0.92);
+}
+:root {
+  --spacing-0: 0;
+  --spacing-25: 2px;
+  --spacing-50: 4px;
+  --spacing-75: 8px;
+  --spacing-100: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 64px;
+  --spacing-800: 80px;
+  --spacing-900: 96px;
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-default: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+  --container-max: 1200px;
+  --text-max: 680px;
+  --touch-target: 44px;
+  --blur-nav: 16px;
+  --blur-menu: 24px;
+  --opacity-muted-word: 0.3;
+  --opacity-disabled: 0.6;
+  --font-sans: Poppins, system-ui, sans-serif;
+}
