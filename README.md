@@ -7,10 +7,20 @@ Anything left out is listed below.
 
 - `404.html`
 - `Main.dc.html`
+- `about-history.html`
+- `about-overview.html`
+- `about.dc.html`
+- `akp-edu-1.html`
+- `akp-edu-2.html`
+- `akp-edu-3.html`
 - `akp-fonts.css`
+- `akp-services-education.html`
 - `akp-tokens.css`
 - `canvas.json` — the canvas: its pages, where each artboard sits, its notes and shapes
+- `careers.dc.html`
+- `careers.html`
 - `ds/akp/tokens.json`
+- `education.dc.html`
 - `index.html`
 - `privacy.dc.html`
 - `terms.dc.html`

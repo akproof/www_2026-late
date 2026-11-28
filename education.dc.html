@@ -1,0 +1,179 @@
+<!doctype html>
+<meta charset="utf-8"><style data-dc-design-system-vars>@layer{:root{--surface:#ffffff;--surface-alt:#f3f6f8;--surface-raised:#ffffff;--ink:#1a1f24;--slate:#485664;--slate-dark:#3a4753;--slate-light:#8f9fae;--line:#d9e1e7;--field-border:#6b7a88;--teal:#0ea2bd;--teal-light:#1ec3e0;--teal-dark:#0189a1;--on-teal:#ffffff;--error:#b42318;--heading-gradient-start:#000000;--heading-gradient-end:#666666;--nav-glass:#ffffffb8;--menu-glass:#ffffffeb;--spacing-0:0;--spacing-25:2px;--spacing-50:4px;--spacing-75:8px;--spacing-100:12px;--spacing-200:16px;--spacing-300:24px;--spacing-400:32px;--spacing-500:40px;--spacing-600:48px;--spacing-700:64px;--spacing-800:80px;--spacing-900:96px;--radius-none:0;--radius-sm:2px;--radius-default:4px;--radius-md:6px;--radius-lg:8px;--radius-xl:12px;--radius-2xl:16px;--radius-3xl:24px;--radius-full:9999px;--container-max:1200px;--text-max:680px;--touch-target:44px;--blur-nav:16px;--blur-menu:24px;--opacity-muted-word:0.3;--opacity-disabled:0.6;--font-sans:Poppins, system-ui, sans-serif;--text-display-xl:600 60px/1 var(--font-sans);--text-display-lg:600 48px/1 var(--font-sans);--text-heading-1:600 36px/40px var(--font-sans);--text-heading-2:600 30px/36px var(--font-sans);--text-heading-3:600 24px/32px var(--font-sans);--text-title:600 20px/28px var(--font-sans);--text-subtitle:600 18px/28px var(--font-sans);--text-lead:400 18px/28px var(--font-sans);--text-body:400 16px/24px var(--font-sans);--text-small:400 14px/20px var(--font-sans);--text-label:600 14px/20px var(--font-sans);--text-nav:500 14px/20px var(--font-sans);--text-button:600 16px/24px var(--font-sans);--text-button-sm:600 14px/20px var(--font-sans);--text-wordmark:300 24px/32px var(--font-sans);}}</style>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Education | Atomic Knowledge Proof</title>
+<meta name="description" content="AKP education programmes in blockchain and cryptography, from first principles to practical application: Enrichment, Advanced Learning and Specialisation.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./_runtime/react.js"></script>
+<script src="./_runtime/react-dom.js"></script>
+<script src="./_runtime/support.js"></script>
+<link rel="stylesheet" href="akp-tokens.css">
+<link rel="icon" type="image/svg+xml" href="./assets/8de5fc793a7427949d0b7666deec9526.svg">
+<link rel="apple-touch-icon" href="./assets/8b4b4af35248e8828b2a4449cd6542f2.png">
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+/* Poppins (SIL Open Font License), Latin subset, hosted with the site */
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url(./assets/04500bea273e787429122ce6e2d9ce7f.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url(./assets/fa4143fae1f96894f4de855f32380afc.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url(./assets/3a054217bb3b24c0191dd32841604d21.woff2) format("woff2")}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}a:hover{color:var(--slate-dark)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:96px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+h1,h2,h3{text-wrap:balance}
+p,li,td,th,dd{text-wrap:pretty}
+.skip{position:absolute;left:16px;top:-64px;z-index:60;background:var(--ink);color:var(--surface);padding:var(--spacing-75) var(--spacing-100);border-radius:var(--radius-lg);font-size:14px;line-height:20px;font-weight:600;text-decoration:none}
+.skip:focus{top:16px;color:var(--surface)}
+header{position:sticky;top:0;z-index:50;background:var(--nav-glass);-webkit-backdrop-filter:blur(var(--blur-nav));backdrop-filter:blur(var(--blur-nav));border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:var(--spacing-200);height:72px;padding:0 var(--spacing-600)}
+.logo{display:inline-flex;align-items:center;min-height:var(--touch-target);padding:0 var(--spacing-100);border-radius:var(--radius-full)}
+.bar-links{display:flex;align-items:center;gap:var(--spacing-25)}
+.navlink{display:inline-flex;align-items:center;min-height:var(--touch-target);padding:0 var(--spacing-100);border-radius:var(--radius-full);font-size:14px;line-height:20px;font-weight:500;color:var(--slate-dark);text-decoration:none;white-space:nowrap;transition:background-color 300ms cubic-bezier(0.22,1,0.36,1)}
+.navlink:hover{background:var(--surface-alt);color:var(--ink)}
+.navlink[aria-current="page"]{background:var(--surface-alt);color:var(--ink)}
+.subnav{display:none;gap:var(--spacing-25);overflow-x:auto;padding:0 var(--spacing-200) var(--spacing-75)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--touch-target);padding:var(--spacing-75) var(--spacing-100);border-radius:var(--radius-full);border:0;font-family:inherit;font-size:16px;line-height:24px;font-weight:600;text-decoration:none;white-space:nowrap;cursor:pointer;background:var(--teal);color:var(--on-teal);transition:background-color 300ms cubic-bezier(0.22,1,0.36,1),transform 300ms cubic-bezier(0.22,1,0.36,1)}
+.btn:hover{background:var(--teal-dark);color:var(--on-teal)}
+.btn-sm{font-size:14px;line-height:20px;margin-left:var(--spacing-75)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn-ghost:hover{background:var(--surface-alt);color:var(--ink)}
+.btn:active{transform:scale(0.98)}
+.btn:focus-visible,.logo:focus-visible,.navlink:focus-visible,.toc a:focus-visible,.doc a:focus-visible,.flink:focus-visible,.tlink:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.tlink{display:inline-flex;align-items:center;min-height:var(--touch-target);font-size:16px;line-height:24px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:4px;transition:text-decoration-color 300ms cubic-bezier(0.22,1,0.36,1)}
+.tlink:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.wrap{width:100%;max-width:var(--container-max);margin:0 auto;padding-left:var(--spacing-600);padding-right:var(--spacing-600)}
+.eyebrow{margin:0;font-size:14px;line-height:20px;font-weight:600;color:var(--slate)}
+.title{margin:var(--spacing-75) 0 0;max-width:var(--text-max);font-size:48px;line-height:1;font-weight:600;padding-bottom:var(--spacing-75);background:linear-gradient(90deg,var(--heading-gradient-start),var(--heading-gradient-end));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin:var(--spacing-200) 0 0;max-width:var(--text-max);font-size:18px;line-height:28px;color:var(--slate)}
+.dated{margin:var(--spacing-200) 0 0;font-size:14px;line-height:20px;color:var(--slate)}
+.phead{padding-top:var(--spacing-800);padding-bottom:var(--spacing-700)}
+.section{padding-top:var(--spacing-900);padding-bottom:var(--spacing-900)}
+.alt{background:var(--surface-alt)}
+.h2{margin:0;font-size:36px;line-height:40px;font-weight:600;color:var(--ink)}
+.intro{margin:var(--spacing-200) 0 0;max-width:var(--text-max);font-size:18px;line-height:28px;color:var(--slate)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--spacing-300);margin-top:var(--spacing-600)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--spacing-300);margin-top:var(--spacing-600)}
+.card{display:flex;flex-direction:column;gap:var(--spacing-100);padding:var(--spacing-400);border:1px solid var(--line);border-radius:var(--radius-2xl);background:var(--surface-raised)}
+.card h3{margin:0;font-size:20px;line-height:28px;font-weight:600;color:var(--ink)}
+.card p{margin:0;font-size:16px;line-height:24px;color:var(--slate);flex-grow:1}
+.card .links{display:flex;flex-wrap:wrap;gap:var(--spacing-300)}
+.tag{margin:0;font-size:14px;line-height:20px;font-weight:600;color:var(--slate)}
+.num{display:inline-flex;align-items:center;justify-content:center;flex:none;width:32px;height:32px;border-radius:var(--radius-full);background:var(--teal);color:var(--on-teal);font-size:14px;line-height:20px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:var(--spacing-75);list-style:none;margin:var(--spacing-400) 0 0;padding:0}
+.chips li{padding:var(--spacing-75) var(--spacing-200);border-radius:var(--radius-full);background:var(--surface-raised);border:1px solid var(--line);font-size:14px;line-height:20px;font-weight:500;color:var(--ink)}
+.roles{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--spacing-50)}
+.roles li{font-size:16px;line-height:24px;color:var(--slate-dark)}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-200);margin-top:var(--spacing-400)}
+.prog{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:var(--spacing-700);align-items:start}
+.prog-head{display:flex;align-items:center;gap:var(--spacing-200)}
+.prog-for{margin:var(--spacing-300) 0 0;font-size:16px;line-height:24px;color:var(--slate-dark)}
+.tiers{margin:var(--spacing-200) 0 0;display:flex;flex-direction:column;gap:var(--spacing-200)}
+.tiers dt{font-size:14px;line-height:20px;font-weight:600;color:var(--ink)}
+.tiers dd{margin:var(--spacing-25) 0 0;font-size:16px;line-height:24px;color:var(--slate)}
+.band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--spacing-400)}
+.page{width:100%;max-width:var(--container-max);margin:0 auto;padding:var(--spacing-800) var(--spacing-600) var(--spacing-900);display:grid;grid-template-columns:240px minmax(0,1fr);gap:var(--spacing-700);align-items:start}
+.page-head{grid-column:1 / -1;max-width:var(--text-max)}
+.toc{position:sticky;top:96px}
+.toc h2{margin:0;font-size:14px;line-height:20px;font-weight:600;color:var(--ink)}
+.toc ol{list-style:none;margin:var(--spacing-75) 0 0;padding:0}
+.toc a{display:block;padding:var(--spacing-50) 0;font-size:14px;line-height:20px;color:var(--slate);text-decoration:none;border-radius:var(--radius-default)}
+.toc a:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-underline-offset:4px}
+.doc{max-width:720px;font-size:16px;line-height:24px;color:var(--slate-dark)}
+.doc h2{margin:var(--spacing-600) 0 0;font-size:24px;line-height:32px;font-weight:600;color:var(--ink)}
+.doc h2:first-child{margin-top:0}
+.doc p{margin:var(--spacing-200) 0 0}
+.doc ul{margin:var(--spacing-200) 0 0;padding-left:var(--spacing-300)}
+.doc li{margin-top:var(--spacing-75)}
+.doc strong{font-weight:600;color:var(--ink)}
+.doc a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:4px;overflow-wrap:anywhere}
+.doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;padding:0 var(--spacing-50);border-radius:var(--radius-default);background:var(--surface-alt);color:var(--ink)}
+.tbl{margin-top:var(--spacing-300);overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-xl)}
+.tbl table{width:100%;min-width:560px;border-collapse:collapse;font-size:14px;line-height:20px}
+.tbl th{text-align:left;font-weight:600;color:var(--ink);background:var(--surface-alt);padding:var(--spacing-100) var(--spacing-200);vertical-align:bottom}
+.tbl td{padding:var(--spacing-100) var(--spacing-200);vertical-align:top;border-top:1px solid var(--line)}
+.tbl td:first-child{font-weight:500;color:var(--ink)}
+footer{padding:var(--spacing-700) 0 var(--spacing-400);background:var(--surface)}
+.fgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-400)}
+.fgrid h2{margin:0;font-size:14px;line-height:20px;font-weight:600;color:var(--ink)}
+.fgrid ul{list-style:none;margin:var(--spacing-75) 0 0;padding:0}
+.fdesc{margin:var(--spacing-75) 0 0;max-width:280px;font-size:14px;line-height:20px;color:var(--slate)}
+.frule{margin:var(--spacing-600) 0 var(--spacing-300);border:0;height:1px;background:var(--line)}
+.fbottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--spacing-200)}
+.fbottom p{margin:0;font-size:14px;line-height:20px;color:var(--slate)}
+.fbottom ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--spacing-300)}
+.flink{display:inline-flex;align-items:center;min-height:32px;font-size:14px;line-height:20px;color:var(--slate);text-decoration:none;border-radius:var(--radius-default)}
+.flink:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-underline-offset:4px}
+.flink[aria-current="page"]{color:var(--ink);font-weight:500}
+@media (max-width:1100px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:960px){.wrap{padding-left:var(--spacing-300);padding-right:var(--spacing-300)}.bar{padding:0 var(--spacing-300)}.section{padding-top:var(--spacing-700);padding-bottom:var(--spacing-700)}.phead{padding-top:var(--spacing-700);padding-bottom:var(--spacing-600)}.prog{grid-template-columns:minmax(0,1fr);gap:var(--spacing-400)}.page{grid-template-columns:minmax(0,1fr);gap:var(--spacing-400);padding:var(--spacing-700) var(--spacing-300)}.toc{position:static;padding:var(--spacing-200);border:1px solid var(--line);border-radius:var(--radius-xl)}}
+@media (max-width:760px){.bar-links .navlink{display:none}.subnav{display:flex}}
+@media (max-width:640px){.grid2,.grid3,.fgrid{grid-template-columns:minmax(0,1fr)}.h2{font-size:30px;line-height:36px}.card{padding:var(--spacing-300)}}
+@media (max-width:564px){.title{font-size:36px;line-height:40px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: var(--surface); color: var(--ink); font-family: var(--font-sans)">
+<a class="skip" href="#content">Skip to content</a>
+<header>
+<div class="bar">
+<a class="logo" href="Main.dc.html" aria-label="AKP home"><img src="./assets/3e110bfb0cf0263685c400a057b37c47.svg" alt="" style="display: block; height: 32px; width: auto"></a>
+<nav class="bar-links" aria-label="Main"><a class="navlink" href="about.dc.html">About</a><a class="navlink" href="education.dc.html" aria-current="page">Education</a><a class="navlink" href="careers.dc.html">Careers</a><a class="navlink" href="Main.dc.html#contact">Contact</a><a class="btn btn-sm" href="Main.dc.html#contact">Talk to our team</a></nav>
+</div>
+<nav class="subnav" aria-label="Sections"><a class="navlink" href="about.dc.html">About</a><a class="navlink" href="education.dc.html" aria-current="page">Education</a><a class="navlink" href="careers.dc.html">Careers</a><a class="navlink" href="Main.dc.html#contact">Contact</a></nav>
+</header>
+<main id="content">
+<section class="phead"><div class="wrap"><p class="eyebrow">Education</p><h1 class="title">From first principles to practical application</h1><p class="lead">AKP is dedicated to bettering digital society from the grassroots. An informed digital society is a prosperous one, so our education starts in primary school, continues through secondary and tertiary study, and carries on into professional life.</p></div></section>
+<section class="section" aria-labelledby="progs-title" style="padding-top: 0">
+<div class="wrap">
+<h2 class="h2" id="progs-title">Three programmes</h2>
+<p class="intro">Each programme builds on the one before, from what trust is to designing a regulated web3 application.</p>
+<div class="grid3"><article class="card"><span class="num" aria-hidden="true">1</span><h3>Enrichment</h3><p>For beginners.</p><div class="links"><a class="tlink" href="#enrichment" aria-label="About the Enrichment programme">About the programme</a></div></article><article class="card"><span class="num" aria-hidden="true">2</span><h3>Advanced Learning</h3><p>For learners after deeper theory.</p><div class="links"><a class="tlink" href="#advanced-learning" aria-label="About the Advanced Learning programme">About the programme</a></div></article><article class="card"><span class="num" aria-hidden="true">3</span><h3>Specialisation</h3><p>For learners ready to build.</p><div class="links"><a class="tlink" href="#specialisation" aria-label="About the Specialisation programme">About the programme</a></div></article></div>
+</div>
+</section>
+<section class="section alt" id="enrichment" aria-labelledby="enrichment-title"><div class="wrap"><div class="prog"><div><div class="prog-head"><span class="num" aria-hidden="true">1</span><h2 class="h2" id="enrichment-title">Enrichment</h2></div><p class="prog-for">For beginners entering the 21st century digital economy through the fundamental concepts of blockchain and cryptography. It covers the ideas needed to appreciate what blockchain technology is, and the vital role that solutions built on it play in regulated web3 infrastructure.</p></div><article class="card"><h3>What students learn</h3><dl class="tiers"><div><dt>Most students</dt><dd>Explain what trust is, why it is the cornerstone of all economic activity, and how it supports economic activity online and in real life.</dd></div><div><dt>Some students</dt><dd>Explain the importance of cryptography, game theory and incentives in digital economies.</dd></div><div><dt>The most advanced students</dt><dd>Explain cryptography concepts.</dd></div></dl></article></div></div></section>
+<section class="section" id="advanced-learning" aria-labelledby="advanced-learning-title"><div class="wrap"><div class="prog"><div><div class="prog-head"><span class="num" aria-hidden="true">2</span><h2 class="h2" id="advanced-learning-title">Advanced Learning</h2></div><p class="prog-for">For learners seeking deeper theoretical knowledge of the infrastructure behind the 21st century digital economy, through advanced concepts in blockchain and cryptography. It covers blockchain technology in the depth needed to fully appreciate the solutions built on it and their vital role in regulated web3 infrastructure.</p></div><article class="card"><h3>What students learn</h3><dl class="tiers"><div><dt>Most students</dt><dd>Explain why blockchain is important and what it is.</dd></div><div><dt>Some students</dt><dd>Explain how blockchains work, including their cryptographic concepts, and how blockchain applies to different use cases.</dd></div><div><dt>The most advanced students</dt><dd>Discuss blockchain case studies on identity and privacy.</dd></div></dl></article></div></div></section>
+<section class="section alt" id="specialisation" aria-labelledby="specialisation-title"><div class="wrap"><div class="prog"><div><div class="prog-head"><span class="num" aria-hidden="true">3</span><h2 class="h2" id="specialisation-title">Specialisation</h2></div><p class="prog-for">For learners ready to apply their new skills to applications for the 21st century digital economy, through a practical design project, a presentation and symposium, and a practicum with industry professionals. It covers current events and trends from working practitioners, to support the design and building of a regulated web3 application.</p></div><article class="card"><h3>What students learn</h3><dl class="tiers"><div><dt>All students</dt><dd>Become familiar with design thinking and project management.</dd></div><div><dt>Most students</dt><dd>Apply the Trust over IP (ToIP) or other web3 models, the GDPR or other privacy regulations, and the PCTF or other trust frameworks.</dd></div><div><dt>The most advanced students</dt><dd>Become familiar with Ethereum, Hyperledger Fabric, Quorum and R3 Corda.</dd></div></dl></article></div></div></section>
+<section class="section" aria-labelledby="plans-title">
+<div class="wrap band">
+<div><h2 class="h2" id="plans-title">Lesson plans for your school</h2><p class="intro">We create custom lesson plans for each school.</p></div>
+<div class="actions" style="margin-top: 0"><a class="btn" href="mailto:edu@akproof.com">Email our education team</a><a class="btn btn-ghost" href="Main.dc.html#contact">Talk to our team</a></div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="fgrid">
+<div>
+<a class="logo" href="Main.dc.html" style="padding: 0" aria-label="AKP home"><img src="./assets/3e110bfb0cf0263685c400a057b37c47.svg" alt="" style="display: block; height: 48px; width: auto"></a>
+<p class="fdesc">An applied frontier sciences and emerging technologies research centre and development workshop.</p>
+</div>
+<nav aria-label="Company"><h2>Company</h2><ul><li><a class="flink" href="about.dc.html">About</a></li><li><a class="flink" href="careers.dc.html">Careers</a></li><li><a class="flink" href="Main.dc.html#contact">Contact</a></li></ul></nav>
+<nav aria-label="What we do"><h2>What we do</h2><ul><li><a class="flink" href="Main.dc.html#services">Services</a></li><li><a class="flink" href="Main.dc.html#products">Products</a></li><li><a class="flink" href="Main.dc.html#work">Our work</a></li></ul></nav>
+<nav aria-label="Education"><h2>Education</h2><ul><li><a class="flink" href="education.dc.html#enrichment">Enrichment</a></li><li><a class="flink" href="education.dc.html#advanced-learning">Advanced Learning</a></li><li><a class="flink" href="education.dc.html#specialisation">Specialisation</a></li></ul></nav>
+</div>
+<hr class="frule">
+<div class="fbottom">
+<p>© 2019–2026 Atomic Knowledge Proof Limited</p>
+<ul>
+<li><a class="flink" href="privacy.dc.html">Privacy policy</a></li>
+<li><a class="flink" href="terms.dc.html">Terms of use</a></li>
+<li><a class="flink" href="Main.dc.html#privacy-choices">Privacy choices</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4300}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
