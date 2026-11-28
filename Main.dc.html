@@ -77,6 +77,8 @@ header{position:sticky;top:0;z-index:50}
 .pn-check input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--teal)}
 .pn-check input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .pn-cat-text{display:block;margin-top:var(--spacing-25);color:var(--slate)}
+.fbrand{display:flex;flex-direction:column;align-items:flex-end;text-align:right}
+@media (max-width:640px){.fbrand{align-items:flex-start;text-align:left}}
 .flink-btn{background:none;border:0;padding:0;margin:0;font-family:inherit;cursor:pointer}
 .flink-btn:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-underline-offset:4px}
 .flink-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
@@ -501,10 +503,6 @@ header{position:sticky;top:0;z-index:50}
 <footer style="padding: var(--spacing-700) 0 var(--spacing-400); background: var(--surface)">
 <div class="wrap">
 <div class="grid4" style="gap: var(--spacing-400)">
-<div>
-<a class="logo" href="#top" style="padding: 0" aria-label="AKP home"><img src="./assets/3e110bfb0cf0263685c400a057b37c47.svg" alt="" style="display: block; height: 48px; width: auto"></a>
-<p style="margin: var(--spacing-75) 0 0; font-size: 14px; line-height: 20px; color: var(--slate); max-width: 280px">An applied frontier sciences and emerging technologies research centre and development workshop.</p>
-</div>
 <nav aria-label="Company">
 <h2 style="margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: var(--ink)">Company</h2>
 <ul style="list-style: none; margin: var(--spacing-75) 0 0; padding: 0">
@@ -531,6 +529,10 @@ header{position:sticky;top:0;z-index:50}
 <li><a class="flink" href="education.dc.html#specialisation">Specialisation</a></li>
 </ul>
 </nav>
+<div class="fbrand">
+<a class="logo" href="#top" style="padding: 0" aria-label="AKP home"><img src="./assets/3e110bfb0cf0263685c400a057b37c47.svg" alt="" style="display: block; height: 48px; width: auto"></a>
+<p style="margin: var(--spacing-75) 0 0; font-size: 14px; line-height: 20px; color: var(--slate); max-width: 280px">An applied frontier sciences and emerging technologies research centre and development workshop.</p>
+</div>
 </div>
 <hr style="margin: var(--spacing-600) 0 var(--spacing-300); border: 0; height: 1px; background: var(--line)">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--spacing-200)">
@@ -690,6 +692,14 @@ class Component extends DCLogic {
   }
 
   componentDidMount() {
+    // On the live site, show a clean address (akproof.com/) instead of the canvas file name.
+    try {
+      if (window.self === window.top && /^https?:$/.test(window.location.protocol) && /\.dc\.html$/.test(window.location.pathname)) {
+        const loc = window.location;
+        const clean = loc.pathname.replace(/Main\.dc\.html$/, '').replace(/\.dc\.html$/, '');
+        window.history.replaceState(window.history.state, '', clean + loc.search + loc.hash);
+      }
+    } catch (e) {}
     const saved = this.readPrivacy();
     this.consent = saved;
     const self = this;

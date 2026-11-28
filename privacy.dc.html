@@ -103,6 +103,7 @@ footer{padding:var(--spacing-700) 0 var(--spacing-400);background:var(--surface)
 .fgrid h2{margin:0;font-size:14px;line-height:20px;font-weight:600;color:var(--ink)}
 .fgrid ul{list-style:none;margin:var(--spacing-75) 0 0;padding:0}
 .fdesc{margin:var(--spacing-75) 0 0;max-width:280px;font-size:14px;line-height:20px;color:var(--slate)}
+.fbrand{display:flex;flex-direction:column;align-items:flex-end;text-align:right}
 .frule{margin:var(--spacing-600) 0 var(--spacing-300);border:0;height:1px;background:var(--line)}
 .fbottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--spacing-200)}
 .fbottom p{margin:0;font-size:14px;line-height:20px;color:var(--slate)}
@@ -113,7 +114,7 @@ footer{padding:var(--spacing-700) 0 var(--spacing-400);background:var(--surface)
 @media (max-width:1100px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:960px){.wrap{padding-left:var(--spacing-300);padding-right:var(--spacing-300)}.bar{padding:0 var(--spacing-300)}.section{padding-top:var(--spacing-700);padding-bottom:var(--spacing-700)}.phead{padding-top:var(--spacing-700);padding-bottom:var(--spacing-600)}.prog{grid-template-columns:minmax(0,1fr);gap:var(--spacing-400)}.page{grid-template-columns:minmax(0,1fr);gap:var(--spacing-400);padding:var(--spacing-700) var(--spacing-300)}.toc{position:static;padding:var(--spacing-200);border:1px solid var(--line);border-radius:var(--radius-xl)}}
 @media (max-width:760px){.bar-links .navlink{display:none}.subnav{display:flex}}
-@media (max-width:640px){.grid2,.grid3,.fgrid{grid-template-columns:minmax(0,1fr)}.h2{font-size:30px;line-height:36px}.card{padding:var(--spacing-300)}}
+@media (max-width:640px){.fbrand{align-items:flex-start;text-align:left}.grid2,.grid3,.fgrid{grid-template-columns:minmax(0,1fr)}.h2{font-size:30px;line-height:36px}.card{padding:var(--spacing-300)}}
 @media (max-width:564px){.title{font-size:36px;line-height:40px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
 </style>
@@ -362,13 +363,13 @@ footer{padding:var(--spacing-700) 0 var(--spacing-400);background:var(--surface)
 <footer>
 <div class="wrap">
 <div class="fgrid">
-<div>
-<a class="logo" href="Main.dc.html" style="padding: 0" aria-label="AKP home"><img src="./assets/3e110bfb0cf0263685c400a057b37c47.svg" alt="" style="display: block; height: 48px; width: auto"></a>
-<p class="fdesc">An applied frontier sciences and emerging technologies research centre and development workshop.</p>
-</div>
 <nav aria-label="Company"><h2>Company</h2><ul><li><a class="flink" href="about.dc.html">About</a></li><li><a class="flink" href="careers.dc.html">Careers</a></li><li><a class="flink" href="Main.dc.html#contact">Contact</a></li></ul></nav>
 <nav aria-label="What we do"><h2>What we do</h2><ul><li><a class="flink" href="Main.dc.html#services">Services</a></li><li><a class="flink" href="Main.dc.html#products">Products</a></li><li><a class="flink" href="Main.dc.html#work">Our work</a></li></ul></nav>
 <nav aria-label="Education"><h2>Education</h2><ul><li><a class="flink" href="education.dc.html#enrichment">Enrichment</a></li><li><a class="flink" href="education.dc.html#advanced-learning">Advanced Learning</a></li><li><a class="flink" href="education.dc.html#specialisation">Specialisation</a></li></ul></nav>
+<div class="fbrand">
+<a class="logo" href="Main.dc.html" style="padding: 0" aria-label="AKP home"><img src="./assets/3e110bfb0cf0263685c400a057b37c47.svg" alt="" style="display: block; height: 48px; width: auto"></a>
+<p class="fdesc">An applied frontier sciences and emerging technologies research centre and development workshop.</p>
+</div>
 </div>
 <hr class="frule">
 <div class="fbottom">
@@ -385,6 +386,16 @@ footer{padding:var(--spacing-700) 0 var(--spacing-400);background:var(--surface)
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5600}}'>
 class Component extends DCLogic {
+  componentDidMount() {
+    // On the live site, show a clean address (akproof.com/about) instead of the canvas file name.
+    try {
+      if (window.self !== window.top) return;
+      const loc = window.location;
+      if (!/^https?:$/.test(loc.protocol) || !/\.dc\.html$/.test(loc.pathname)) return;
+      const clean = loc.pathname.replace(/Main\.dc\.html$/, '').replace(/\.dc\.html$/, '');
+      window.history.replaceState(window.history.state, '', clean + loc.search + loc.hash);
+    } catch (e) {}
+  }
   renderVals() { return {}; }
 }
 </script>
